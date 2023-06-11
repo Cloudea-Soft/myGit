@@ -1,0 +1,145 @@
+body {
+    height: 100%;
+    background: url(../images/bodyBG_01.jpg) fixed no-repeat;
+    background-size: cover;
+}
+
+.alldiv {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.shortcut {
+    display: none;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+
+.header {
+    height: 150px;
+    background: url(../images/header_01.jpg) 0 -150px no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.nav {
+    height: 50px;
+    border-bottom: 2px solid #333;
+    transition: 0.3s all;
+}
+
+.nav-fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #333;
+    box-sizing: content-box;
+    border-bottom: 2px solid #111;
+}
+
+.nav-fix .alldiv {
+    box-sizing: content-box;
+    border-left: 2px dotted rgba(255, 255, 255, 0.5);
+    border-right: 2px dotted rgba(255, 255, 255, 0.5);
+}
+
+.nav .bg {
+    height: 100%;
+    background-color: #333;
+}
+
+.nav .nav-menu {
+    float: left;
+}
+
+.nav .nav-menu>ul>li {
+    z-index: 1000;
+    position: relative;
+    float: left;
+    line-height: 50px;
+    font-size: 16px;
+    border-right: 2px dotted rgba(255, 255, 255, 0.5);
+}
+
+.nav .nav-menu li a {
+    display: block;
+    line-height: 50px;
+    padding: 0 25px;
+}
+
+.nav-submenu {
+    padding-top:2px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-submenu li {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.nav .nav-menu>ul>li:hover {
+    background-color: #444;
+}
+
+.nav .nav-menu li:hover a {
+    color: white;
+}
+
+.nav .nav-menu li:hover .nav-submenu,
+.nav .nav-menu li .nav-submenu:hover {
+    display: block;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+}
+
+.nav .nav-search {
+    float: right;
+    border-left: 2px dotted rgba(255, 255, 255, 0.5);
+}
+
+.nav-search-content {
+    float: left;
+    display: flex;
+    margin: 8px 0px 6px 0px;
+    height: 36px;
+    width: 0;
+    background-color: #999;
+    align-items: center;
+    transition: all 300ms;
+}
+
+.nav-search form:hover .nav-search-content,
+.nav-search form:focus-within .nav-search-content {
+    margin: 8px 2px 6px 10px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 0 8px;
+}
+
+.nav-search-content input {
+    line-height: 16px;
+    font-size: 16px;
+    width: 0;
+    background-color: transparent;
+}
+
+.nav-search form:hover .nav-search-content input,
+.nav-search form:focus-within .nav-search-content input {
+    width: 100%;
+}
+
+.nav-search-btn {
+    float: left;
+    width: 80px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-search-btn:hover {
+    cursor: pointer;
+}
