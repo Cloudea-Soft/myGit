@@ -11,8 +11,8 @@
 > 这是我第一次制作开源项目，对各方面还不是很了解，如果我使用开源代码的方法不当，请联系我，我会做出改正。
 
 ## Related Efforts
-- [RichardLitt/standard-readme](https://github.com/RichardLitt/standard-readme) - README.md是基于此项目书写的。
-- [dmego/home.github.io](https://github.com/dmego/home.github.io#%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5) - 标题页根据Demgo的个人主页项目修改。
+- [RichardLitt/standard-readme](https://github.com/RichardLitt/standard-readme) - README.md基于此标准书写。
+- [dmego/home.github.io](https://github.com/dmego/home.github.io#%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5) - 标题页基于Demgo的个人主页项目制作。
 - [**](/) - ...待补充
 
 ## Maintainers
