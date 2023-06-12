@@ -1,6 +1,6 @@
 # myGit个人网站项目
 [![myGit compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/DrawnLemon/myGit)
-[![myGit liscense](https://camo.githubusercontent.com/644bde8eef04dc396bbf98aa0af0c9443f443c88a6fb7668be7452786c88916d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f646d65676f2f686f6d652e6769746875622e696f2e737667)](/)
+[![myGit liscense](https://camo.githubusercontent.com/644bde8eef04dc396bbf98aa0af0c9443f443c88a6fb7668be7452786c88916d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f646d65676f2f686f6d652e6769746875622e696f2e737667)](https://github.com/DrawnLemon/myGit/blob/main/LICENSE)
 
 由初学者制作的一个简易个人网站，使用HTML+CSS+JS编写。
 
@@ -17,4 +17,4 @@
 [@DrawnLemon.](https://github.com/DrawnLemon)
 
 ## License
-[MIT] © DrawnLemon
+[MIT](https://github.com/DrawnLemon/myGit/blob/main/LICENSE) © DrawnLemon
