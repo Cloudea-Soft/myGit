@@ -143,3 +143,108 @@ body {
 .nav-search-btn:hover {
     cursor: pointer;
 }
+
+/* -------------------footer------------------- */
+.footer {
+    background-color: #333;
+}
+
+.footer .footer-box {
+    padding: 40px 100px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-box .links {
+    margin-top: 50px;
+}
+
+.footer .footer-box ul {
+    line-height: 30px;
+}
+
+.footer .footer-box ul li {
+    float: left;
+    padding: 0 10px;
+    color: #c7a462;
+    font-family: "futura-pt", "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer .footer-box .me ul li a {
+    color: #c7a462;
+}
+
+.footer .footer-box .me ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-box .links ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background: url(../images/vsprite.png?v=2) no-repeat 0 -192px;
+    -webkit-transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.footer .footer-box .links li:nth-child(2) a {
+    background-position: 0 -192px;
+}
+
+.footer .footer-box .links li:nth-child(2) a:hover {
+    background-position: -30px -192px;
+}
+
+.footer .footer-box .links li:nth-child(3) a {
+    background-position: -60px -192px;
+}
+
+.footer .footer-box .links li:nth-child(3) a:hover {
+    background-position: -90px -192px;
+}
+
+.footer .footer-box .links li:nth-child(4) a {
+    background-position: -120px -192px;
+}
+
+.footer .footer-box .links li:nth-child(4) a:hover {
+    background-position: -150px -192px;
+}
+
+.footer .footer-box .links li:nth-child(5) a {
+    background-position: -180px -192px;
+}
+
+.footer .footer-box .links li:nth-child(5) a:hover {
+    background-position: -210px -192px;
+}
+
+.footer .footer-box .links li:nth-child(6) a {
+    background-position: -240px -162px;
+}
+
+.footer .footer-box .links li:nth-child(6) a:hover {
+    background-position: -270px -162px;
+}
+
+.footer .footer-box .links li:nth-child(7) a {
+    background-position: -180px -162px;
+}
+
+.footer .footer-box .links li:nth-child(7) a:hover {
+    background-position: -210px -162px;
+}
+
+.footer .footer-foot {
+    height: 50px;
+    padding: 0 110px;
+    background-color: #222;
+}
+
+.footer .footer-foot p {
+    text-align: center;
+    line-height: 50px;
+    color: #999;
+}

@@ -19,13 +19,13 @@
 (function carouselSlide() {
     // 图片信息
     const imgData = [
-        { url: 'images/carousel-slide0.jpg', title: '111', color: 'rgba(100,67,68,0.9)', source: 'https://www.pixiv.net/artwork/' },
-        { url: 'images/carousel-slide1.jpg', title: '222', color: 'rgba(102,67,68,0.9)', source: 'https://www.pixiv.net/artwork/' },
-        { url: 'images/carousel-slide2.jpg', title: '333', color: 'rgba(100,57,56,0.9)', source: 'https://www.pixiv.net/artwork/' },
-        { url: 'images/carousel-slide3.jpg', title: '444', color: 'rgba(100,67,74,0.9)', source: 'https://www.pixiv.net/artwork/' },
-        { url: 'images/carousel-slide4.jpg', title: '555', color: 'rgba(100,42,68,0.9)', source: 'https://www.pixiv.net/artwork/' },
-        { url: 'images/carousel-slide5.jpg', title: '666', color: 'rgba(190,67,68,0.9)', source: 'https://www.pixiv.net/artwork/' },
-        { url: 'images/carousel-slide6.jpg', title: '777', color: 'rgba(100,21,68,0.9)', source: 'https://www.pixiv.net/artwork/' }
+        { url: '../images/carousel-slide0.jpg', title: '111', color: 'rgba(100,67,68,0.9)', source: 'https://www.pixiv.net/artwork/' },
+        { url: '../images/carousel-slide1.jpg', title: '222', color: 'rgba(102,67,68,0.9)', source: 'https://www.pixiv.net/artwork/' },
+        { url: '../images/carousel-slide2.jpg', title: '333', color: 'rgba(100,57,56,0.9)', source: 'https://www.pixiv.net/artwork/' },
+        { url: '../images/carousel-slide3.jpg', title: '444', color: 'rgba(100,67,74,0.9)', source: 'https://www.pixiv.net/artwork/' },
+        { url: '../images/carousel-slide4.jpg', title: '555', color: 'rgba(100,42,68,0.9)', source: 'https://www.pixiv.net/artwork/' },
+        { url: '../images/carousel-slide5.jpg', title: '666', color: 'rgba(190,67,68,0.9)', source: 'https://www.pixiv.net/artwork/' },
+        { url: '../images/carousel-slide6.jpg', title: '777', color: 'rgba(100,21,68,0.9)', source: 'https://www.pixiv.net/artwork/' }
     ]
 
     // 获取初始渲染所需Dom节点
