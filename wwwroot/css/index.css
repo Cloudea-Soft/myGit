@@ -1,0 +1,301 @@
+/* -------------------main------------------- */
+.main {
+    /* height: 2000px; */
+    opacity: 1;
+}
+
+.main-sub {
+    margin-bottom: 30px;
+}
+
+.main-sub:last-child {
+    margin-bottom: 0;
+}
+
+/* -------------------main1------------------- */
+.main1 {
+    height: 600px;
+}
+
+.main1-left {
+    float: left;
+    width: 900px;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main1-right {
+    float: left;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* -------------------main1-slider------------------- */
+.main1-left .carousel-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 2px solid #888;
+    border-radius: 10px;
+}
+
+.main1-left .carousel-slide-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.4s;
+}
+
+.main1-left .carousel-slide-wrapper li {
+    flex: 1;
+}
+
+.main1-left .carousel-slide-wrapper li img {
+    width: 100%;
+    height: 100%;
+}
+
+.main1-left .carousel-slide-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(100,67,68,0.9); */
+    -webkit-mask-image: linear-gradient(0, #2f3238 13%, transparent 22%);
+}
+
+.main1-left .carousel-slide-mask-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.main1-left .carousel-slide-footer {
+    position: absolute;
+    top: 480px;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    /* background-color: rgba(100, 67, 68, 0.8); */
+    padding: 12px 12px 0 12px;
+    /* position: relative; */
+}
+
+.main1-left .carousel-slide-footer .toggle {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    display: flex;
+}
+
+.main1-left .carousel-slide-footer .toggle button {
+    margin-right: 12px;
+    width: 28px;
+    height: 28px;
+    appearance: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main1-left .carousel-slide-footer .toggle button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.main1-left .carousel-slide-footer-title {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main1-left .carousel-slide-indicator {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+}
+
+.main1-left .carousel-slide-indicator li {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.main1-left .carousel-slide-indicator li.radius-active {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+}
+
+/*自动播放或者点击向右滑动的按键时的动画，张口在右边*/
+.main1-left .carousel-slide-indicator .radiusAnimation {
+    position: relative;
+    background-color: transparent;
+}
+
+.radiusAnimation::before,
+.radiusAnimation::after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+}
+
+.radiusAnimation::before {
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    border-radius: 7px 7px 0 0;
+    animation: animate_top .3s linear 2;
+}
+
+.radiusAnimation::after {
+    position: absolute;
+    bottom: 0;
+    transform-origin: 50% 0;
+    border-radius: 0 0 7px 7px;
+    animation: animate_bottom .3s linear 2;
+}
+
+@keyframes animate_top {
+    50% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes animate_bottom {
+    50% {
+        transform: rotate(45deg);
+    }
+}
+
+/* 点击向左滑动按钮的动画样式，张口在左边*/
+.main1-left .carousel-slide-indicator .radiusAnimation2 {
+    position: relative;
+    background-color: transparent;
+}
+
+.radiusAnimation2::before,
+.radiusAnimation2::after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+}
+
+/*两个伪类元素的动画样式不一样，注意区分*/
+.radiusAnimation2::before {
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    border-radius: 7px 7px 0 0;
+    animation: animate_top2 .3s linear 2;
+}
+
+.radiusAnimation2::after {
+    position: absolute;
+    bottom: 0;
+    transform-origin: 50% 0;
+    border-radius: 0 0 7px 7px;
+    animation: animate_bottom2 .3s linear 2;
+}
+
+@keyframes animate_top2 {
+    50% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes animate_bottom2 {
+    50% {
+        transform: rotate(-45deg);
+    }
+}
+
+/* -------------------self-info------------------- */
+.main1-right .self-info h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.main1-right .self-info .self-aphorism {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.main1-right .self-info .self-intro {
+    margin-top: 15px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.main1-right .self-info .self-waifu {
+    margin: 40px auto 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.main1-right .self-info .self-waifuimg {
+    height: 310px;
+    align-items: center;
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px 5px black;
+}
+
+.main1-right .self-info .self-waifuimg img {
+    width: 100%;
+}
+
+/* -------------------main2------------------- */
+.main2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main2 .main-card {
+    background-color: #fff;
+}
+
+/* -------------------main3------------------- */
+.main3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main3 .main-card {
+    background-color: #fff;
+}
+
+/* -------------------main4------------------- */
+.main4 {
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+}

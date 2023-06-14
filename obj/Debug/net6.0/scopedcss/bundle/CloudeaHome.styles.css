@@ -1,0 +1,446 @@
+/* _content/CloudeaHome/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+/* base.css */
+*[b-0lpxbxt7la] {
+    box-sizing: border-box;
+}
+
+body[b-0lpxbxt7la],
+p[b-0lpxbxt7la],
+h1[b-0lpxbxt7la],
+h2[b-0lpxbxt7la],
+h3[b-0lpxbxt7la],
+h4[b-0lpxbxt7la],
+h5[b-0lpxbxt7la],
+h6[b-0lpxbxt7la],
+ul[b-0lpxbxt7la],
+ol[b-0lpxbxt7la],
+dl[b-0lpxbxt7la],
+li[b-0lpxbxt7la],
+dt[b-0lpxbxt7la],
+dd[b-0lpxbxt7la] {
+    /* 默认有边距，都要清除 */
+    margin: 0;
+    padding: 0;
+    /*字体设置*/
+    font-size: 14px;
+    font-family: "Microsoft Yahei", sans-serif;
+    color: #333;
+    /* 去掉列表的原点 */
+    list-style: none;
+    /* 默认鼠标 */
+    cursor: default;
+}
+
+/*可选*/
+html[b-0lpxbxt7la],
+body[b-0lpxbxt7la] {
+    width: 100%;
+    height: 100%;
+    font-size: 100px !important;
+}
+
+/*行内块元素*/
+input[b-0lpxbxt7la],
+img[b-0lpxbxt7la] {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+}
+
+/*行内元素*/
+a[b-0lpxbxt7la],
+a:active[b-0lpxbxt7la],
+a:visited[b-0lpxbxt7la] {
+    /*下划线和颜色*/
+    text-decoration: none;
+    color: #ccc;
+}
+
+    a:hover[b-0lpxbxt7la] {
+        color: #333;
+    }
+
+textarea[b-0lpxbxt7la] {
+    /* 边框清零 */
+    border: none;
+    /* 轮廓线清零 */
+    outline: none;
+    /* 防止文本域被随意拖拽 */
+    resize: none;
+}
+
+button[b-0lpxbxt7la] {
+    border-style: none;
+}
+
+i[b-0lpxbxt7la] {
+    /*文字样式*/
+    font-style: normal;
+}
+
+table[b-0lpxbxt7la] {
+    /*边框合并*/
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 使用伪元素清除浮动 */
+.clearfix[b-0lpxbxt7la]::before,
+.clearfix[b-0lpxbxt7la]::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: none;
+    clear: both;
+}
+
+.clearfix[b-0lpxbxt7la] {
+    *zoom: 1;
+}
+
+/* 版心*/
+.w[b-0lpxbxt7la] {
+    width: 1883px;
+    margin: 0 auto;
+}
+
+/*可选*/
+/*单选框和复选框的配置，一般是分开的*/
+input[type="radio"][b-0lpxbxt7la],
+input[type="checkbox"][b-0lpxbxt7la] {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    display: none;
+}
+
+label[b-0lpxbxt7la] {
+    display: inline-block;
+    cursor: pointer;
+}
+
+    label input[type="radio"] + span[b-0lpxbxt7la],
+    label input[type="checkbox"] + span[b-0lpxbxt7la] {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background: url("../images/nocheck.png") no-repeat;
+    }
+
+    label input[type="radio"]:checked + span[b-0lpxbxt7la],
+    label input[type="checkbox"]:checked + span[b-0lpxbxt7la] {
+        background: url("../images/check.png") no-repeat;
+    }
+
+    label input[type="radio"]:checked ~ i[b-0lpxbxt7la],
+    label input[type="checkbox"]:checked ~ i[b-0lpxbxt7la] {
+        color: #38d6ff;
+    }
+
+/*可选*/
+/* 自定义数字框配置 */
+input[type="number"][b-0lpxbxt7la] {
+    width: 76px;
+    height: 36px;
+    background-color: rgba(5, 45, 82, 0.4);
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+    input[type="number"][b-0lpxbxt7la]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    input[type="number"] + div[b-0lpxbxt7la] {
+        width: 30px;
+        height: 40px;
+        padding-left: 2px;
+        cursor: pointer;
+    }
+
+        input[type="number"] + div > .count_add[b-0lpxbxt7la] {
+            display: block;
+            width: 28px;
+            height: 19px;
+            background: url("../images/count_add.png") no-repeat;
+            background-size: contain;
+            margin-bottom: 2px;
+        }
+
+        input[type="number"] + div > .count_subtract[b-0lpxbxt7la] {
+            display: block;
+            width: 28px;
+            height: 19px;
+            background: url("../images/count_subtract.png") no-repeat;
+            background-size: contain;
+        }
+
+/* ===================== header footer ===================== */
+body[b-0lpxbxt7la] {
+    height: 100%;
+    background: url(/imgs/bodyBG_01.jpg) fixed no-repeat;
+    background-size: cover;
+}
+
+.alldiv[b-0lpxbxt7la] {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.shortcut[b-0lpxbxt7la] {
+    display: none;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+
+.header[b-0lpxbxt7la] {
+    height: 150px;
+    background: url(/imgs/header_01.jpg) 0 -150px no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.header-fix[b-0lpxbxt7la] {
+    margin-bottom: 72px;
+}
+
+.nav[b-0lpxbxt7la] {
+    height: 50px;
+    border-bottom: 2px solid #333;
+    transition: 0.3s all;
+}
+
+.nav-fix[b-0lpxbxt7la] {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #333;
+    box-sizing: content-box;
+    border-bottom: 2px solid #111;
+}
+
+    .nav-fix .alldiv[b-0lpxbxt7la] {
+        box-sizing: content-box;
+        border-left: 2px dotted rgba(255, 255, 255, 0.5);
+        border-right: 2px dotted rgba(255, 255, 255, 0.5);
+    }
+
+.nav .bg[b-0lpxbxt7la] {
+    height: 100%;
+    background-color: #333;
+}
+
+.nav .nav-menu[b-0lpxbxt7la] {
+    float: left;
+}
+
+    .nav .nav-menu > ul > li[b-0lpxbxt7la] {
+        z-index: 1000;
+        position: relative;
+        float: left;
+        line-height: 50px;
+        font-size: 16px;
+        border-right: 2px dotted rgba(255, 255, 255, 0.5);
+    }
+
+    .nav .nav-menu li a[b-0lpxbxt7la] {
+        display: block;
+        line-height: 50px;
+        padding: 0 25px;
+    }
+
+.nav-submenu[b-0lpxbxt7la] {
+    padding-top: 2px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+    .nav-submenu li[b-0lpxbxt7la] {
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+.nav .nav-menu > ul > li:hover[b-0lpxbxt7la] {
+    background-color: #444;
+}
+
+.nav .nav-menu li:hover a[b-0lpxbxt7la] {
+    color: white;
+}
+
+.nav .nav-menu li:hover .nav-submenu[b-0lpxbxt7la],
+.nav .nav-menu li .nav-submenu:hover[b-0lpxbxt7la] {
+    display: block;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+}
+
+.nav .nav-menu li .nav-submenu a:hover[b-0lpxbxt7la] {
+    background-color: rgba(100, 100, 100, 0.8);
+}
+
+.nav .nav-search[b-0lpxbxt7la] {
+    float: right;
+    border-left: 2px dotted rgba(255, 255, 255, 0.5);
+}
+
+.nav-search-content[b-0lpxbxt7la] {
+    float: left;
+    display: flex;
+    margin: 8px 0px 6px 0px;
+    height: 36px;
+    width: 0;
+    background-color: #999;
+    align-items: center;
+    transition: all 300ms;
+}
+
+.nav-search form:hover .nav-search-content[b-0lpxbxt7la],
+.nav-search form:focus-within .nav-search-content[b-0lpxbxt7la] {
+    margin: 8px 2px 6px 10px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 0 8px;
+}
+
+.nav-search-content input[b-0lpxbxt7la] {
+    line-height: 16px;
+    font-size: 16px;
+    width: 0;
+    background-color: transparent;
+}
+
+.nav-search form:hover .nav-search-content input[b-0lpxbxt7la],
+.nav-search form:focus-within .nav-search-content input[b-0lpxbxt7la] {
+    width: 100%;
+}
+
+.nav-search-btn[b-0lpxbxt7la] {
+    float: left;
+    width: 80px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+    .nav-search-btn:hover[b-0lpxbxt7la] {
+        cursor: pointer;
+    }
+
+/* -------------------footer------------------- */
+.footer[b-0lpxbxt7la] {
+    background-color: #333;
+}
+
+    .footer .footer-box[b-0lpxbxt7la] {
+        padding: 40px 100px;
+        margin-bottom: 20px;
+    }
+
+        .footer .footer-box .links[b-0lpxbxt7la] {
+            margin-top: 50px;
+        }
+
+        .footer .footer-box ul[b-0lpxbxt7la] {
+            line-height: 30px;
+        }
+
+            .footer .footer-box ul li[b-0lpxbxt7la] {
+                float: left;
+                padding: 0 10px;
+                color: #c7a462;
+                font-family: "futura-pt", "Helvetica Neue", Arial, sans-serif;
+            }
+
+        .footer .footer-box .me ul li a[b-0lpxbxt7la] {
+            color: #c7a462;
+        }
+
+            .footer .footer-box .me ul li a:hover[b-0lpxbxt7la] {
+                text-decoration: underline;
+            }
+
+        .footer .footer-box .links ul li a[b-0lpxbxt7la] {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-indent: -9999px;
+            background: url(/imgs/vsprite.png?v=2) no-repeat 0 -192px;
+            -webkit-transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+            -moz-transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+            -o-transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        .footer .footer-box .links li:nth-child(2) a[b-0lpxbxt7la] {
+            background-position: 0 -192px;
+        }
+
+            .footer .footer-box .links li:nth-child(2) a:hover[b-0lpxbxt7la] {
+                background-position: -30px -192px;
+            }
+
+        .footer .footer-box .links li:nth-child(3) a[b-0lpxbxt7la] {
+            background-position: -60px -192px;
+        }
+
+            .footer .footer-box .links li:nth-child(3) a:hover[b-0lpxbxt7la] {
+                background-position: -90px -192px;
+            }
+
+        .footer .footer-box .links li:nth-child(4) a[b-0lpxbxt7la] {
+            background-position: -120px -192px;
+        }
+
+            .footer .footer-box .links li:nth-child(4) a:hover[b-0lpxbxt7la] {
+                background-position: -150px -192px;
+            }
+
+        .footer .footer-box .links li:nth-child(5) a[b-0lpxbxt7la] {
+            background-position: -180px -192px;
+        }
+
+            .footer .footer-box .links li:nth-child(5) a:hover[b-0lpxbxt7la] {
+                background-position: -210px -192px;
+            }
+
+        .footer .footer-box .links li:nth-child(6) a[b-0lpxbxt7la] {
+            background-position: -240px -162px;
+        }
+
+            .footer .footer-box .links li:nth-child(6) a:hover[b-0lpxbxt7la] {
+                background-position: -270px -162px;
+            }
+
+        .footer .footer-box .links li:nth-child(7) a[b-0lpxbxt7la] {
+            background-position: -180px -162px;
+        }
+
+            .footer .footer-box .links li:nth-child(7) a:hover[b-0lpxbxt7la] {
+                background-position: -210px -162px;
+            }
+
+    .footer .footer-foot[b-0lpxbxt7la] {
+        height: 50px;
+        padding: 0 110px;
+        background-color: #222;
+    }
+
+        .footer .footer-foot p[b-0lpxbxt7la] {
+            text-align: center;
+            line-height: 50px;
+            color: #999;
+        }

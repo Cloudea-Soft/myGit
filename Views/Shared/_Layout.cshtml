@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cloudea">
+    <title>@ViewData["Title"] - CloudeaHome</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CloudeaHome.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <section class="shortcut">
+            <div class="alldiv"></div>
+        </section>
+        <!-- 头部图片模块 -->
+        <div class="header alldiv"></div>
+        <!-- 菜单栏模块 -->
+        <div class="nav .navbar-fixed-top">
+            <div class="alldiv bg">
+                <div class="nav-menu">
+                    <ul>
+                        <li>
+                            <a>首页</a>
+                        </li>
+                        <li>
+                            <a>②作品小结</a>
+                            <ul class="nav-submenu">
+                                <li><a href="">Anime</a></li>
+                                <li><a href="">Manga</a></li>
+                                <li><a href="">Light Novel</a></li>
+                                <li><a href="">Galgame</a></li>
+                            </ul>
+                        </li>
+                        <li><a>osu记录</a></li>
+                        <li>
+                            <a>网页小游戏</a>
+                            <ul class="nav-submenu">
+                                <li><a href="">none</a></li>
+                                <li><a href="">none</a></li>
+                                <li><a href="">none</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>个人工具</a>
+                            <ul class="nav-submenu">
+                                <li><a href="">网页案例</a></li>
+                                <li><a href="https://bpmdetector.kniffen.dev/file/">bpm测试</a></li>
+                                <li><a href="">文件存储</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-search">
+                    <form>
+                        <div class="nav-search-content">
+                            <input type="text">
+                        </div>
+                        <button class="nav-search-btn">搜索</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="footer">
+            <div class="alldiv">
+                <div class="footer-box">
+                    <div class="me">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Become a Member</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>Connect</li>
+                            <li><a href="#">⭐</a></li>
+                            <li><a href="#">⭐</a></li>
+                            <li><a href="#">⭐</a></li>
+                            <li><a href="#">⭐</a></li>
+                            <li><a href="#">⭐</a></li>
+                            <li><a href="#">⭐</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-foot">
+                    <p>Copy Right</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
